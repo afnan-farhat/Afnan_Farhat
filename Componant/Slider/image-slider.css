@@ -1,0 +1,22 @@
+/* Circle for current slide number */
+.img-slider-circle-container {
+    position: absolute;
+    bottom: 20px; /* Add some space between the image and the circles */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.img-slider-circle {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for inactive circles */
+    transition: background-color 0.3s ease;
+}
+
+.img-slider-circle.active {
+    background-color: black; /* Active circle indicator */
+}

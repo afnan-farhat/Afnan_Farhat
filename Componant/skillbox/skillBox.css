@@ -1,0 +1,144 @@
+.App {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+/* Main section styling */
+main {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  min-height: 20vh;
+  color: #333;
+  /* Customize color */
+  align-items: center;
+  /* Center items vertically */
+  justify-content: center;
+  /* Center items horizontally */
+  text-align: center;
+  /* Center align text */
+}
+
+main .content {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  padding: 0px 100px 0px 100px;
+  min-height: 30vh;
+  font-size: 1.35rem;
+  /* Adjust size as needed */
+  line-height: 0,;
+  color: #333;
+  /* Customize color */
+  align-items: center;
+  justify-content: center;
+}
+
+main .title {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  min-height: 70vh;
+  
+  font-size: 1.2rem;
+  /* Adjust size as needed */
+  line-height: 1.6;
+  color: #333;
+  /* Customize color */
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.skill-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+  margin: 4px;
+  gap: 25px;
+  
+}
+/* Make skill boxes stack on smaller screens */
+@media (max-width: 768px) {
+  .skill-box-container {
+    width: 100%; /* Make each skill box take full width on smaller screens */
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 28px; /* Adjust font size for mobile */
+  }
+}
+
+.skill-box {
+  width: 60%;
+  height: 180px;
+  border: 2px solid #000000;
+  border-radius: 1px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  box-sizing: border-box; /* Ensure padding doesn't affect box size */
+}
+.skill-box:hover {
+  border-color: #000000;  /* Border color on hover */
+color: #ffffff;
+}
+
+
+.skill-box img {
+  max-width: 90px;
+  max-height: 90px;
+}
+
+/* Logo name inside the skill box */
+.skill-box .logo-name {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Optional: Adjust hover effects more smoothly */
+.skill-box:hover {
+  border-color: #000000;
+  color: #ffffff;
+  background-color: #000000;
+  transform: scale(1.05); /* Slightly scale the box on hover */
+}
+
+.skill-box:hover .logo-name {
+  color: #ffffff;  /* Change text color on hover */
+}
+
+/* Skill box "pop" effect */
+.skill-box.popped {
+  transform: scale(0.5);
+}
+
+
+.logo-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+.logo-name {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}

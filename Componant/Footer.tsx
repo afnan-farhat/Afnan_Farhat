@@ -1,0 +1,35 @@
+import React from "react";
+import "./styles.css";
+
+function Footer() {
+    return (
+        <footer className="footer">
+            <div className="footer-content">
+
+                <hr className="footer-line" />
+                <div className="footer-top">
+                    <p className="footer-name" style={{
+                        fontFamily: "Courier New"
+                    }}>Afnan Farhat</p>
+                    <div className="social-icons">
+                        <a href="https://www.linkedin.com/in/afnan-tariq-7b284a314?"  // Change this link to your LinkedIn profile
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="linkedin_logo.png" alt="LinkedIn" className="social-icon" />
+                        </a>
+                        <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                                alt="GitHub"
+                                className="social-icon"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <p className="footer-copyright" style={{ fontFamily: "Courier New" }
+                }>&copy; 2025 Afnan Farhat. All rights reserved.</p>
+            </div>
+        </footer>
+    );
+}
+
+export default Footer;
