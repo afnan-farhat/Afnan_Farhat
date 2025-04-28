@@ -1,0 +1,86 @@
+.title {
+  text-align: center;
+}
+
+.certificate-heading {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.category-buttons button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.category-buttons button.selected {
+  background-color: black;
+  color: white;
+}
+
+.image-slider {
+  max-width: 600px;
+  aspect-ratio: 16/9;
+  margin: 50px auto 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 1s ease-in-out;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  cursor: pointer;
+  color: black;
+  padding: 0 10px;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: black;
+}

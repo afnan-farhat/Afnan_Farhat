@@ -70,11 +70,58 @@ hr-style {
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    max-height: 95%;
   }
 
   input[type="submit"]:hover {
     background-color: white;
     color: black;
+  }
+}
+
+
+/* General form field styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Style for submit button */
+.submit-button {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  width:50%; /* Full width on smaller devices */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Hover effect */
+.submit-button:hover {
+  background-color: #777777;
+  border-color: #777777;
+}
+
+/* Mobile view - same style but can adjust padding or font-size if necessary */
+@media (max-width: 767px) {
+  .submit-button {
+    font-size: 14px; /* Slightly smaller font size for mobile */
+    padding: 12px 25px; /* Adjust padding for mobile view */
+  }
+}
+
+/* Tablet and desktop view - same as mobile, but may adjust padding or font-size */
+@media (min-width: 768px) {
+  .submit-button {
+    font-size: 16px; /* Maintain same size for laptop */
+    padding: 12px 30px; /* Adjust padding for larger screens */
   }
 }
 
@@ -186,13 +233,35 @@ hr-style {
 .icon-project {
   width: 35px;
   height: 35px;
+  padding: 5px; /* Add padding inside the box containing the image */
+
   margin-right: 15px;
   /* Add space between the icons */
   margin-top: 15px;
   /* Add space between the icons */
   border-radius: 20%;
   background-color: black;
-  display: inline-flex;
+  display: inline-block;
+  /* Align icons inline */
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  /* Smooth transition for scale effect */
+}
+
+/* Icon styling */
+.icon-project-inactive {
+  width: 35px;
+  height: 35px;
+  padding: 5px; /* Add padding inside the box containing the image */
+
+  margin-right: 15px;
+  /* Add space between the icons */
+  margin-top: 15px;
+  /* Add space between the icons */
+  border-radius: 20%;
+  background-color: rgb(141, 139, 139);
+  display: inline-block;
   /* Align icons inline */
   align-items: center;
   justify-content: center;

@@ -14,7 +14,7 @@ export default function GitHubIconBox() {
       }}
     >
       <a
-        href="https://github.com/"
+        href="https://github.com/afnan-farhat"
         target="_blank"
         rel="noopener noreferrer"
         style={{

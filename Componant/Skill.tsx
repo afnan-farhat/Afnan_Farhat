@@ -1,31 +1,31 @@
 import React from "react";
-import pythonLogo from "C:/Users/Afnan/navtraining/public/icons/python-without-bg2.jpg";
+import pythonLogo from "C:/Users/Afnan/navtraining/public/icons/python.png";
 import javaLogo from "C:/Users/Afnan/navtraining/public/icons/java logo.png";
 import wordpressLogo from "C:/Users/Afnan/navtraining/public/icons/wordpress.png";
 import FigmaLogo from "C:/Users/Afnan/navtraining/public/icons/Figma-logo.png";
-import FlutterLogo from "C:/Users/Afnan/navtraining/public/icons/flutter.jpg";
+import FlutterLogo from "C:/Users/Afnan/navtraining/public/icons/flutter.png";
 import ReactLogo from "C:/Users/Afnan/navtraining/public/icons/react logo.png";
-import FirebaseLogo from "C:/Users/Afnan/navtraining/public/icons/firebase logo.png";
-import MySQL from "C:/Users/Afnan/navtraining/public/icons/MySQL-Logo.png";
+import FirebaseLogo from "C:/Users/Afnan/navtraining/public/icons/firebase logo (1).png";
+import MySQL from "C:/Users/Afnan/navtraining/public/icons/mysql-LOGO-01.png";
 import Illustrator from "C:/Users/Afnan/navtraining/public/icons/illustrator-logo.png";
 import Canva from "C:/Users/Afnan/navtraining/public/icons/canva-logo.png";
-import GithubLogo from "C:/Users/Afnan/navtraining/public/icons/github.jpg";
+import GithubLogo from "C:/Users/Afnan/navtraining/public/icons/github.png";
 import JuypeterLogo from "C:/Users/Afnan/navtraining/public/icons/jupyter-logo.png";
 
 import pythonLogoBW from "C:/Users/Afnan/navtraining/public/icons/python logo B&W.png";
 import javaLogoBW from "C:/Users/Afnan/navtraining/public/icons/java logo B&W.png";
 import wordpressLogoBW from "C:/Users/Afnan/navtraining/public/icons/wordpress LOGO B&W.png";
-import FigmaLogoBW from "C:/Users/Afnan/navtraining/public/icons/figmalogo-black-white--01-01-01.png";
+import FigmaLogoBW from "C:/Users/Afnan/navtraining/public/icons/figma-logo BW.jpg";
 import FlutterLogoBW from "C:/Users/Afnan/navtraining/public/icons/flutter.logo B&W.png";
 import ReactLogoBW from "C:/Users/Afnan/navtraining/public/icons/react LOGO B&W.png";
-import FirebaseLogoBW from "C:/Users/Afnan/navtraining/public/icons/firebaselogo-black-white-01.png";
-import MySQLBW from "C:/Users/Afnan/navtraining/public/icons/MySQL-Logo-balck&white copy.png";
+import FirebaseLogoBW from "C:/Users/Afnan/navtraining/public/icons/firebaselogo-B&W.png";
+import MySQLBW from "C:/Users/Afnan/navtraining/public/icons/mysql-LOGO-02.png";
 import IllustratorBW from "C:/Users/Afnan/navtraining/public/icons/illustrator-logo-black-white-01.png";
 import CanvaBW from "C:/Users/Afnan/navtraining/public/icons/canva-logo B&W.png";
-import GithubBW from "C:/Users/Afnan/navtraining/public/icons/github B&W.jpg";
-import JuypeterLogoBW from "C:/Users/Afnan/navtraining/public/icons/jupyter-logo B&W.png";
+import GithubBW from "C:/Users/Afnan/navtraining/public/icons/github B&W.png";
+import JuypeterLogoBW from "C:/Users/Afnan/navtraining/public/icons/jupyter B&W.png";
 
-import SkillBox from "./skillbox/SkillBox";
+import SkillBox from "./SkillBox";
 import "@/app/app.css";
 
 const Skill = () => {
@@ -41,6 +41,7 @@ const Skill = () => {
           <div><p></p></div>
           <SkillBox logoSrc={pythonLogo} logoName="Python" hoverLogoSrc={pythonLogoBW} />
         </div>
+        
 
         {/* 2nd row of SkillBoxes */}
         <div className="skill-box-container">
@@ -94,3 +95,4 @@ const Skill = () => {
 };
 
 export default Skill;
+

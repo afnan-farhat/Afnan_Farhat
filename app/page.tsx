@@ -6,6 +6,7 @@ import About from "@/Componant/About";
 import Skill from "@/Componant/Skill";
 import Project from "@/Componant/Project";
 import Certificate from "@/Componant/Certificate";
+import Achivement from "@/Componant/Achievement";
 import Contact from "@/Componant/Contact";
 import Footer from "@/Componant/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
       { id: "skills", name: "Skill" },
       { id: "projects", name: "Project" },
       { id: "certificates", name: "Certificate" },
+      { id: "achivement", name: "Achivement" },
       { id: "contact", name: "Contact" }
     ];
 
@@ -43,16 +45,18 @@ export default function Home() {
 
   const renderPageContent = () => {
     switch (activePage) {
-      
+
       case "Skill":
         return <Skill />;
       case "Project":
         return <Project />;
       case "Certificate":
         return <Certificate />;
+      case "Achivement":
+        return <Achivement />;
       case "Contact":
         return <Contact />;
-      
+
     }
   };
 
@@ -60,9 +64,10 @@ export default function Home() {
     <div>
       <title>Afnan Farhat</title>
 
-      
+
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo" />
+      <link href="https://fonts.googleapis.com/css2?css?family=Cairo" rel="stylesheet" />
+
       {/* Navigation Bar */}
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
@@ -100,6 +105,15 @@ export default function Home() {
                   Certificates
                 </a>
               </li>
+              <li className={`nav-item ${activePage === "Achivement" ? "active" : ""}`}>
+                <a
+                  className="nav-link"
+                  href="#achivement"
+                  onClick={() => setActivePage("Achivement")}
+                >
+                  Achievement
+                </a>
+              </li>
               <li className={`nav-item ${activePage === "Contact" ? "active" : ""}`}>
                 <a className="nav-link" href="#contact" onClick={() => setActivePage("Contact")}>
                   Contact
@@ -122,21 +136,22 @@ export default function Home() {
       </div>
       <div id="projects">
         <Project />
+        <div id="achivement">
+        <Achivement />
+      </div>
       </div>
       <div id="certificates">
         <Certificate />
       </div>
+      
       <div id="contact">
         <Contact />
       </div>
       <Footer />
 
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   
+
     </div>
 
-    
+
   );
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import LinkedInIcon from "./Icons/LinkedInIcon";
-import GitHubIconBox from "./Icons/githubIcon";
+import LinkedInIcon from "./LinkedInIcon";
+import GitHubIconBox from "./githubIcon";
 
 export default function About() {
   const [animationKey, setAnimationKey] = useState(0);
@@ -15,35 +15,19 @@ export default function About() {
   }, []);
 
   return (
-    <main
-      className="title"
-      style={{
-        backgroundImage: "url('path/to/your/image.jpg')", // Provide the correct path to your image
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        padding: "20px", // Optional: Add padding to create space around the content
-      }}
-    >
+    <main className="title">
       <h1>Hello I’m</h1>
       <h1 className="typewriter-text" key={animationKey}>
         Afnan Farhat
       </h1>
       <p className="content">
-        I’m an IT graduate passionate about crafting innovative digital
-        solutions through web and mobile development, UI/UX design, and
-        technical project management. With a strong foundation in programming
-        and a commitment to continuous learning, I thrive on turning ideas into
-        impactful user experiences.
+        I’m an IT graduate passionate about crafting innovative digital solutions through web and mobile development, UI/UX design, and technical project management. With a strong foundation in programming and a commitment to continuous learning, I thrive on turning ideas into impactful user experiences.
       </p>
-      {/* Container for both LinkedIn and GitHub icons */}
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
+      <div className="social-icons">
         <LinkedInIcon />
         <GitHubIconBox />
       </div>
-
       <hr />
-
     </main>
   );
 }

@@ -1,0 +1,29 @@
+.title {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px; /* Optional: Add padding to create space around the content */
+  }
+  
+  .typewriter-text {
+    /* Add your typewriter animation styles here if needed */
+  }
+  
+  .content {
+    font-size: 16px;
+    color: #fff; /* Set a text color that works with your background */
+    margin-top: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons .linkedin-icon,
+  .social-icons .github-icon {
+    /* Add icon styling here, or import from components */
+  }
+  

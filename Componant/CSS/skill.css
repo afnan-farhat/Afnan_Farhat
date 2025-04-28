@@ -1,0 +1,109 @@
+/* skill.css */
+.App {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main {
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    min-height: 20vh;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .skill-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31%;
+    margin: 4px;
+    gap: 25px;
+  }
+  
+  @media (max-width: 768px) {
+    .skill-box-container {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  }
+  
+  .skill-box {
+    width: 60%;
+    height: 180px;
+    border: 2px solid #000000;
+    border-radius: 1px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .skill-box:hover {
+    border-color: #000000;
+    color: #ffffff;
+  }
+  
+  .skill-box img {
+    max-width: 90px;
+    max-height: 90px;
+  }
+  
+  .skill-box .logo-name {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .skill-box:hover {
+    border-color: #000000;
+    color: #ffffff;
+    background-color: #000000;
+    transform: scale(1.05);
+  }
+  
+  .skill-box:hover .logo-name {
+    color: #ffffff;
+  }
+  
+  .skill-box.popped {
+    transform: scale(0.5);
+  }
+  
+  .logo-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 30px;
+  }
+  
+  .logo-name {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  

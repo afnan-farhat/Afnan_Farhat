@@ -1,13 +1,13 @@
-import { MoveLeft } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 import emailjs from "emailjs-com"; // Import the emailjs package
+import "./CSS/Contact.css"; // Import the CSS file
 
-function Contact() {
+const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  // TypeScript fix for event typing
+  // Handle mouse hover effect on the submit button
   const handleMouseOver = (e: React.MouseEvent<HTMLInputElement>) => {
     (e.target as HTMLInputElement).style.backgroundColor = "#777777";
     (e.target as HTMLInputElement).style.border = "#777777";
@@ -20,7 +20,7 @@ function Contact() {
 
   // Handle form submission and send email
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault(); // Prevent the page from refreshing on form submission
+    e.preventDefault();
 
     // Prepare the message object to send to EmailJS
     const templateParams = {
@@ -51,8 +51,7 @@ function Contact() {
 
   return (
     <main className="contact-container">
-
-      <h1 style={{ fontWeight: 'bold', fontSize: '36px' }}>Contact</h1>
+      <h1 className="contact-title">Contact</h1>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-field">
           <label className="field-label">Name</label>
@@ -86,12 +85,11 @@ function Contact() {
           value="Submit"
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
+          className="submit-button"
         />
       </form>
-
     </main>
-
   );
-}
+};
 
 export default Contact;
